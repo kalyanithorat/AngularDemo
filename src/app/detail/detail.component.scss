@@ -1,0 +1,124 @@
+// @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+ .all{
+  width: 100vw;
+  height: 100vh;
+background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  
+ }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+    background: lightcoral;
+    width: 450px;
+    margin: 2em 0;
+    padding: 2em 1em;
+    border-radius: 50px;
+    position: relative;
+    height: 400px;
+     align-content: center;
+     margin-left: 30%;
+     background: #DCE35B;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.user-profile {
+  text-align: center;
+}
+
+.avatar-container {
+  
+  width: 15rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(https://bit.ly/2npgQy5);
+  background-position: center;
+  background-size: cover;
+
+  .avatar {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+  }
+}
+
+.first {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px 0 15px;
+  margin-top: -15px;
+  color:black;
+}
+  .second {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    // padding: 30px 0 15px;
+    margin-top: -15px;
+    color:black;
+  }
+
+  .third {
+    display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px 0 15px;
+  margin-top: -15px;
+  color:blue;
+  }
+
+  btn-primary { 
+    color: #fff;
+    background-color:rgb(218, 98, 138);
+    border-color: #2e6da4;
+    margin-right: 30px;
+    
+    
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+  
+
+
+ 

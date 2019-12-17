@@ -1,0 +1,19 @@
+
+  
+<div class="all" fxLayout="row wrap">
+  
+<div class="container">
+        <h1 class="title">Profile</h1>
+        <div class="user-profile">
+          <div class="avatar-container">
+            <img src="assets/user.png" alt="" class="avatar" />
+          </div>
+      
+          <h2 class="first">{{user?.name}}</h2>
+           <h2 class="second">{{user?.email}}</h2>
+           <h2 class="third">{{user?.city}}</h2>
+        </div>
+ 
+      </div>
+      </div>
+      <button class="btn btn-primary"[routerLink]="['/user']">View Profile</button>

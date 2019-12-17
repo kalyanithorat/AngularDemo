@@ -1,0 +1,142 @@
+
+
+    <div  fxLayout="row" fxLayoutAlign="start stretch">
+                            <div class="signup-container" *ngIf="!show" fxFlex="50" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="24px">
+                                     
+
+                                          <a href="#" class="google btn"><i class="fa fa-google" aria-hidden="true"></i>
+                                                         Continue with Google
+                                               </a>
+
+                                               <a href="#" class="fb btn">
+                                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                                 Continue with Facebook
+                                                       </a>
+                                                       
+                                                       <!-- <button (click)="toggle()" id="bt">
+                                                        {{buttonName}}
+                                                    </button> -->
+
+                                                  
+
+
+
+                                                       <h2>{{childExample}}</h2>
+                                                       <span class="light_gray TosDisclaimer"><a (click)="toggle()">
+                                                                Sign Up With Email
+                                                        </a>. By signing up you indicate that you have read and agree to Quora's <a class="tos_link" href="/about/tos" nav_style="modal_present" target="_blank" rel="noopener">Terms of Service</a> and 
+                                                        <a class="tos_link" href="/about/privacy" nav_style="modal_present" target="_blank" rel="noopener">Privacy Policy</a>.</span>
+                            </div>
+                            <div class="signup">
+                            <div *ngIf="show">
+                                    
+                              <div class="row">
+                                  <div class="col-md-12 offset-md-3">
+                                      <h4>Signup</h4>
+                                      <form [formGroup]="registerForm" (ngSubmit)= "register(registerForm)" (ngSubmit)="onSubmit()">
+                                             
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                        
+                                        
+                                        <div class="form-group">
+                                              <label>First Name</label>
+                                              <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted &amp;&amp; registerForm.controls.firstName.errors }"/>
+                                              <div *ngIf="registerForm?.controls['firstName'].touched || registerForm?.controls['firstName'].dirty" class="text-danger">
+                                                  <div *ngIf="registerForm?.controls['firstName'].errors?.required"><div class="alert alert-danger" role="alert">
+                                                    First Name is Required!
+                                                  </div></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    
+                                        <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label>Last Name</label>
+                                            <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted &amp;&amp; registerForm.controls.lastName.errors }" />
+                                            <div *ngIf="registerForm?.controls['lastName'].touched || registerForm?.controls['lastName'].dirty" class="text-danger">
+                                                <div *ngIf="registerForm?.controls['lastName'].errors?.required"> <div class="alert alert-danger" role="alert">
+                                                    Last name required!
+                                                  </div></div>
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+
+                                          <div class="form-group">
+                                              <label>Email</label>
+                                              <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && registerForm.email.errors }" />
+                        <div *ngIf="registerForm?.controls['email'].touched || registerForm?.controls['email'].dirty" class="invalid-feedback">
+                            <div *ngIf="registerForm?.controls['email'].errors?.required"><div class="alert alert-danger" role="alert">
+                                Email is Required!
+                              </div></div>
+                            <div *ngIf="registerForm?.controls['email'].errors?.pattern">Email must be a valid email address</div>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Password</label>
+                                              <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted &amp;&amp; registerForm.controls.password.errors }"  />
+                                              <div *ngIf="registerForm?.controls['password'].touched || registerForm?.controls['password'].dirty" class="text-danger">
+                                                  <div *ngIf="registerForm?.controls['password'].errors?.required"> <div class="alert alert-danger" role="alert">
+                                                    password is required!
+                                                  </div></div>
+                                                  <div *ngIf="registerForm?.controls['password'].errors?.minlength"><div class="alert alert-danger" role="alert">
+                                                    password must contain at least 6 charector!
+                                                  </div></div>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                                <div class="row">
+                                                        <div class="col-sm-12 text-center">
+                                                                <input class="btn btn-primary" type="submit" [disabled]="!registerForm.valid" value="Signup">
+                                                             <a class="cancel" (click)="toggle()">Cancel</a>
+                                                         </div>
+                                                    </div>
+
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div> 
+                             </div>
+                            </div>
+                        
+
+                             <div class="login-container" fxFlex="50">
+                                   <app-login (signupClick)="toggle()"></app-login>
+                            </div> 
+               </div>  
+               
+
+
+
+
+
+
+
+
+
+
+
+              
+            
+
+   
+  
+  
+    
